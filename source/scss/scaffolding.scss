@@ -6,9 +6,9 @@ body {
 	font-family: 'Roboto', 'Arial', sans-serif;
 	font-size: 14px;
 	line-height: 19.6px;
-	font-width: 300;
+	font-weight: 300;
 	font-style: normal;
-	color: #ffffff;
+	color: #FFFFFF;
 
 	background-color: #1F1C1D;
 }
@@ -20,6 +20,32 @@ img {
 
 a {
 	text-decoration: none;
+}
+
+.button {
+	display: inline-block;
+	padding: 12px 18px;
+	
+	font: inherit;
+	font-size: 12px;
+	line-height: 14px;
+	font-weight: 700;
+	color: #FFFFFF;
+	text-align: center;
+	
+	outline: none;
+	vertical-align: middle;
+	border: 1px solid #A07B50;
+	box-sizing: border-box;
+
+	&:focus {
+		color: #A07B50;
+		border: 1px solid #CEC2B5;
+	}
+
+	&:active {
+		opacity: 0.6;
+	}
 }
 
 .visually-hidden:not(:focus):not(:active),
