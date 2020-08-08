@@ -1,7 +1,7 @@
 .page-header {
 	background-color: #181617;
 	background-image: 
-	 url('../img/header/cat-redhead.png');
+	 url('../img/header/cat-redhead-mobile.png');
 	background-repeat: no-repeat;
 	background-position: bottom right;
 }
@@ -13,17 +13,24 @@
 	text-align: center;
 }
 
-.page-header__logo-link:hover .page-header__logo {
-	fill: #CCBFB1;
+.page-header__logo-wrapper {
+	padding-top: 25px;
+	margin-bottom: 52px;
 }
 
-.page-header__logo {
-	margin-top: 25px;
-	margin-bottom: 52px;
-	
+.page-header__logo {	
 	fill: #A07B50;
 
 	vertical-align: middle;
+
+	transition-property: fill;
+	transition-duration: 0.15s;
+	transition-timing-function: linear;
+}
+
+.page-header__logo-link:hover 
+.page-header__logo {
+	fill: #CCBFB1;
 }
 
 .page-header__city {
@@ -56,4 +63,124 @@
 	font-weight: 400;
 	color: #A07B50;
 	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.page-header__social {
+	display: none;
+}
+
+@media (min-width: $tablet-width) {
+	.page-header {
+		background-image: 
+		 url('../img/header/cat-redhead-tablet.png');
+	}
+
+	.page-header__wrapper {
+		padding: 0 43px;
+		min-height: 595px;
+
+		text-align: left;
+	}
+
+	.page-header__logo-wrapper {
+		padding-top: 29px;
+		margin-bottom: 92px;
+
+		text-align: center;
+	}
+
+	.page-header__logo {
+		width: 55px; 
+		height: 25px;
+	}
+
+	.page-header__wrapper-content {
+		margin-bottom: 58px;
+	}
+
+	.page-header__city {
+		margin-bottom: 19px;
+
+		font-size: 16px;
+		line-height: 24px;
+	}
+
+	.page-header__title {
+		margin-bottom: 18px;
+		width: 340px;
+		
+		font-size: 52px;
+		line-height: 60px;
+	}
+
+	.page-header__text {
+		margin-bottom: 50px;
+		width: 270px;
+		
+		font-size: 16px;
+		line-height: 24px;
+	}
+
+	.page-header__social {
+		display: flex;
+		margin: 0;
+		padding: 0;
+
+		list-style: none;
+	}
+}
+
+@media (min-width: $desktop-width) {
+	.page-header {
+		background-image: 
+		 url('../img/header/cat-redhead-desktop.png');
+	}
+
+	.page-header__wrapper {
+		padding: 0 78px;
+		min-height: 684px;
+		max-width: 1366px;
+		margin: 0 auto;
+	}
+
+	.page-header__logo-wrapper {
+		padding-top: 47px;
+		margin-bottom: 115px;
+	}
+
+	.page-header__logo {
+		width: 50px; 
+		height: 23px;
+	}
+
+	.page-header__wrapper-content {
+		margin-bottom: 47px;
+		padding-left: 126px;
+	}
+
+	.page-header__title {
+		margin-bottom: 15px;
+	}
+
+	.page-header__text {
+		margin-bottom: 48px;
+	}
+
+	.page-header__social {
+		position: relative;
+
+		&::before {
+			content: "";
+
+			position: absolute;
+			top: -109px;
+			left: 50%;
+			z-index: 1;
+
+			width: 0.5px;
+			height: 78px;
+
+			background-color: rgba(255, 255, 255, 0.61);	
+		}
+	}
 }
