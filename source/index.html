@@ -62,5 +62,98 @@
 			</ul>
 		</div>
 	</header>
+
+	<main>
+		<section class="nurslings">
+			<div class="nurslings__wrapper">
+				<h2 class="nurslings__title">Питомцы</h2>
+				<p class="nurslings__desc">Все представители нашего питомника имеют ветеринарный 
+				паспорт с отметками о прививках и документ с родословной</p>
+				<ul class="nurslings__cats-toggle">
+					<li class="nurslings__cats-toggle-item">
+						<button class="nurslings__button-cat nurslings__button-cat--active" 
+						 type="button">Коты</button>
+					</li>
+					<li class="nurslings__cats-toggle-item">
+						<button class="nurslings__button-cat" 
+						 type="button">Кошки</button>
+					</li>
+					<li class="nurslings__cats-toggle-item">
+						<button class="nurslings__button-cat" 
+						 type="button">Котята</button>
+					</li>
+				</ul>
+				<div class="nurslings__images-container">
+					<div class="nurslings__images-wrapper">
+						<ul class="nurslings__images-list">
+							<li class="nurslings__images-item">
+								<picture>
+									<source type="image/webp" media="(min-width: 1366px)"
+								 	 srcset="img/nurslings/cat-desktop-1.webp">
+									<source type="image/webp" media="(min-width: 768px)"
+								 	 srcset="img/nurslings/cat-tablet-1.webp">
+									<source type="image/webp" 
+								 	 srcset="img/nurslings/cat-mobile-1.webp">
+								 	
+									<source media="(min-width: 1366px)"
+								 	 srcset="img/nurslings/cat-desktop-1.jpg">
+								 	<source media="(min-width: 768px)"
+								 	 srcset="img/nurslings/cat-tablet-1.jpg">
+									<img src="img/nurslings/cat-mobile-1.jpg" 
+									 alt="Серый кот">
+								</picture>
+							</li>
+							<li class="nurslings__images-item">
+								<picture>
+									<source type="image/webp" media="(min-width: 1366px)"
+								 	 srcset="img/nurslings/cat-desktop-2.webp">
+									<source type="image/webp" media="(min-width: 768px)"
+								 	 srcset="img/nurslings/cat-tablet-2.webp">
+									<source type="image/webp" 
+								 	 srcset="img/nurslings/cat-mobile-2.webp">
+									
+									<source media="(min-width: 1366px)"
+								 	 srcset="img/nurslings/cat-desktop-2.jpg">
+									<source media="(min-width: 768px)"
+								 	 srcset="img/nurslings/cat-tablet-2.jpg">
+									<img src="img/nurslings/cat-mobile-2.jpg" 
+									 alt="Коричневый кот">
+								</picture>
+							</li>
+							<li class="nurslings__images-item">
+								<picture>
+									<source type="image/webp" media="(min-width: 1366px)"
+								 	 srcset="img/nurslings/cat-desktop-3.webp">
+									<source type="image/webp" media="(min-width: 768px)"
+								 	 srcset="img/nurslings/cat-tablet-3.webp">
+									<source type="image/webp" 
+								 	 srcset="img/nurslings/cat-mobile-3.webp">
+									
+									<source media="(min-width: 1366px)"
+								 	 srcset="img/nurslings/cat-desktop-3.jpg">
+								 	<source media="(min-width: 768px)"
+								 	 srcset="img/nurslings/cat-tablet-3.jpg">
+									<img src="img/nurslings/cat-mobile-3.jpg" 
+									 alt="Белый кот">
+								</picture>
+							</li>
+						</ul>
+					</div>
+					<div class="nurslings__button-toggles">
+						<button class="nurslings__button-toggle nurslings__button-toggle--prev disabled" 
+						 type="button">
+							<span class="visually-hidden">Назад</span>
+						</button>
+						<button class="nurslings__button-toggle nurslings__button-toggle--next" 
+						 type="button">
+							<span class="visually-hidden">Вперёд</span>
+						</button>
+					</div>
+				</div>
+				<a class="nurslings__link button" href="#detailed">Смотреть больше</a>
+			</div>
+		</section>
+	</main>
+	<script src="js/images-toggle.js"></script>
 </body>
 </html>
