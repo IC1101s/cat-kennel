@@ -1,0 +1,270 @@
+.nurslings__wrapper {
+	margin: 0 auto;
+	padding: 0 15px;
+	max-width: 290px;
+
+	text-align: center;
+}
+
+.nurslings__title {
+	margin: 0;
+	margin-bottom: 23px;
+	padding-top: 55px;
+
+	font-family: 'Yeseva One', sans-serif;
+	font-size: 28px;
+	line-height: 32px;
+	font-weight: 400;
+	color: #FFFFFF;
+}
+
+.nurslings__desc {
+	margin: 0;
+	margin-bottom: 31px;
+
+	font-size: 14px;
+	line-height: 19.6px;
+	font-weight: 300;
+	color: #A07B50;
+}
+
+.nurslings__cats-toggle {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;
+	margin-bottom: 35px;
+	padding: 0;
+	width: 234px;
+
+	list-style: none;
+}
+
+.nurslings__button-cat {
+	padding: 0;
+
+	font: inherit;
+	font-size: 16px;
+	line-height: 19px;
+	font-weight: 500;
+	color: rgba(255, 255, 255, 0.2);
+
+	background-color: transparent;
+	border: none;
+
+	&--active {
+		color: rgba(255, 255, 255, 1);
+	}
+}
+
+@media (max-width: 1365px) {
+	.nurslings__images-container {
+		position: relative;
+
+		margin-bottom: 45px;	
+	}
+
+	.nurslings__images-wrapper {
+		margin: 0 auto;
+		width: 234px;
+		height: 248px;
+
+		overflow: hidden;
+	}
+
+	.nurslings__images-list {
+		display: flex;
+		margin: 0;
+		padding: 0;
+
+		transition-property: transform;
+		transition-duration: 0.4s;
+		transition-timing-function: ease;
+		
+		list-style: none;
+	}
+
+	.nurslings__images-item {
+		flex-shrink: 0;
+		
+		img {
+			vertical-align: middle;
+		}
+	}
+
+	.nurslings__button-toggle {
+		position: absolute;
+		top: 50%;
+		z-index: 1;
+
+		width: 15px;
+		height: 15px;
+
+		border: 1px solid #A07B50;
+		border-right-width: 0;
+		border-top-width: 0;
+		background-color: transparent;
+
+		&--prev.disabled,
+		&--next.disabled { 
+	  		pointer-events: none;
+		}
+
+		&--prev {
+			left: 0;
+			transform: rotate(45deg);
+		} 
+
+		&--next {
+			right: 0;
+			transform: rotate(-135deg);
+		} 
+	}
+}
+
+@media (min-width: $tablet-width) {
+	.nurslings__wrapper {
+		padding: 0 28px;
+		max-width: 712px;
+	}
+
+	.nurslings__title {
+		margin-bottom: 22px;
+		padding-top: 101px;
+
+		font-size: 36px;
+		line-height: 42px;
+	}
+
+	.nurslings__desc {
+		margin: 0 auto;
+		margin-bottom: 43px;
+		max-width: 520px;
+
+		font-size: 16px;
+		line-height: 26px;
+	}
+
+	.nurslings__cats-toggle {
+		margin-bottom: 38px;
+		width: 264px;
+	}
+
+	.nurslings__button-cat {
+		font-size: 18px;
+		line-height: 21px;
+	}
+
+    @media (max-width: 1365px) {
+		.nurslings__images-container {
+			margin-bottom: 58px;	
+		}
+
+		.nurslings__images-wrapper {
+			position: relative;
+
+			width: 702px;
+			height: 493px;
+		}
+
+		.nurslings__images-item {
+			position: absolute;
+			left: 50%;
+
+			width: 100%;
+		
+			&:nth-child(1) {
+				transform: translate(-50%);
+				z-index: 1;
+			}
+			
+			&:nth-child(2) {
+				transform: translate(-65.5%, 80%);
+				z-index: -1;
+			}
+
+			&:nth-child(3) {
+				transform: translate(-38.5%, 80%);
+				z-index: -1;
+			}
+		}
+
+		.nurslings__button-toggle {
+			width: 20px;
+			height: 20px;
+
+			border-left-width: 2px;
+			border-bottom-width: 2px;
+
+			pointer-events: none;
+		}
+	}
+}
+
+@media (min-width: $desktop-width) {
+	.nurslings__wrapper {
+		margin-bottom: 83px;
+		padding: 0 78px;
+		max-width: 1210px;
+	}
+
+	.nurslings__title {
+		margin-bottom: 20px;
+		padding-top: 223px;
+	}
+
+	.nurslings__desc {
+		margin-bottom: 43px;
+	}
+
+	.nurslings__cats-toggle {
+		margin-bottom: 45px;
+		width: 260px;
+	}
+
+	.nurslings__images-container {
+		margin-bottom: 54px;
+	}
+
+	.nurslings__images-wrapper {
+		margin: 0 auto;
+		width: 1025px;
+		min-height: 485px;
+	}
+
+	.nurslings__images-list {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: flex-start;
+		margin: 0;
+		padding: 0;
+		
+		list-style: none;
+	}
+
+	.nurslings__images-item {
+		flex-shrink: 0;
+
+		&:nth-child(1) {
+			order: 2;
+			margin-left: 35px;
+		}
+
+		&:nth-child(2) {
+			order: 3;
+			margin-top: -236px;
+		}
+
+		&:nth-child(3) {
+			order: 1;
+
+		}
+
+		img {
+			vertical-align: middle;
+		}
+	}
+
+	.nurslings__button-toggles {
+		display: none;
+	}
+}
